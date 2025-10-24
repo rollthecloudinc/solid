@@ -59,18 +59,18 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "shell:build",
+            "buildTarget": "shell:build",
             "publicHost": "http://localhost:5000",
             "port": 5000,
             "extraWebpackConfig": "projects/shell/webpack.config.js"
           },
           "configurations": {
             "development": {
-              "browserTarget": "shell:build:development",
+              "buildTarget": "shell:build:development",
               "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             },
             "production": {
-              "browserTarget": "shell:build:production",
+              "buildTarget": "shell:build:production",
               "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             }
           },
@@ -169,7 +169,7 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "plugin:build",
+            "buildTarget": "plugin:build",
             "publicHost": "http://localhost:3000",
             "port": 3000,
             "extraWebpackConfig": "projects/plugin/webpack.config.js"
@@ -177,12 +177,12 @@
           "configurations": {
   
             "development": {
-              "browserTarget": "plugin:build:development",
+              "buildTarget": "plugin:build:development",
               "extraWebpackConfig": "projects/plugin/webpack.prod.config.js"
             },
 
             "production": {
-              "browserTarget": "plugin:build:production",
+              "buildTarget": "plugin:build:production",
               "extraWebpackConfig": "projects/plugin/webpack.prod.config.js"
             }
           },
@@ -252,5 +252,8 @@
     "@schematics/angular:resolver": {
       "typeSeparator": "."
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

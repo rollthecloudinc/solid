@@ -17,6 +17,10 @@
   "private": true,
   "dependencies": {
     "@angular-architects/module-federation": "^20.0.0",
+    "@angular-devkit/architect": "^0.2003.6",
+    "@angular-devkit/build-angular": "^20.3.6",
+    "@angular-devkit/core": "^20.3.6",
+    "@angular-devkit/schematics": "^20.3.6",
     "@angular/animations": "^20.3.7",
     "@angular/cdk": "^20.2.10",
     "@angular/cdk-experimental": "^20.2.10",
