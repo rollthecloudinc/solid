@@ -7,7 +7,8 @@ import { ContentPluginManager } from '@rollthecloudinc/content';
         <div class="task">
             <p>Download</p>
         </div>
-    `
+    `,
+    standalone: false
 })
 
 export class DownloadComponent implements OnInit {

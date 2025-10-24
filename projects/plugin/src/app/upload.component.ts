@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
         <div class="task">
             <p>Upload</p>
         </div>
-    `
+    `,
+    standalone: false
 })
 
 export class UploadComponent implements OnInit {

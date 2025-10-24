@@ -3,8 +3,9 @@ import { LookupService } from '../plugins/lookup.service';
 import { PluginOptions } from '../plugins/plugin';
 
 @Component({
-  selector: 'app-config',
-  templateUrl: './config.component.html'
+    selector: 'app-config',
+    templateUrl: './config.component.html',
+    standalone: false
 })
 export class ConfigComponent implements OnInit {
 

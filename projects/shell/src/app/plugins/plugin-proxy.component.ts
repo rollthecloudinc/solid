@@ -6,7 +6,8 @@ import { PluginOptions } from './plugin';
     selector: 'plugin-proxy',
     template: `
         <ng-container #placeHolder></ng-container>
-    `
+    `,
+    standalone: false
 })
 export class PluginProxyComponent implements OnChanges {
     @ViewChild('placeHolder', { read: ViewContainerRef, static: true })

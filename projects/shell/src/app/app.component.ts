@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { LookupService } from './plugins/lookup.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    standalone: false
 })
 export class AppComponent implements OnInit {
 
