@@ -6,9 +6,10 @@ import { environment } from './environments/environment';
 
 console.log('bootstrap');
 
-if (environment.production) {
+// This is what I see that is different between spear and this solid
+/*if (environment.production) {
   enableProdMode();
-}
+}*/
 
 /*platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));*/

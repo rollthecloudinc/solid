@@ -52,7 +52,8 @@
               "vendorChunk": false,
               "buildOptimizer": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
@@ -139,7 +140,9 @@
           "configurations": {
             "development": {
               "optimization": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "outputHashing": "all",
+              "extractLicenses": true
             },
             "production": {
               "fileReplacements": [
@@ -191,6 +194,26 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "build": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "target": "plugin:esbuild:development",
+            "tsConfig": "projects/plugin/tsconfig.app.json",
+            "rebuildDelay": 0,
+            "dev": true,
+            "port": 3000
+          },
+          "configurations": {
+            "development": {
+              "target": "plugin:esbuild:development"
+            },
+            "production": {
+              "dev": false,
+              "target": "plugin:esbuild:production"
+            }
+          },
+          "defaultConfiguration": "production"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
